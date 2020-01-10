@@ -1,0 +1,11 @@
+footer {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  margin-bottom: 0;
+  padding: 1rem;
+}
+
+footer h4 {
+  margin-bottom: 0;
+}

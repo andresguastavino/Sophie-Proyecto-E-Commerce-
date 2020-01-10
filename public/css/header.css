@@ -1,0 +1,45 @@
+header div#top-nav {
+	height: 6rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header div#top-nav div#buscar {
+	width: 30%;
+	text-align: center;
+}
+
+header div#top-nav div#buscar button {
+	padding: 0rem 0.6rem;
+}
+
+header div#top-nav div#buscar input {
+	width: 60%;
+	text-align: center;
+}
+
+header div#top-nav div#titulo {
+	width: 40%;
+	text-align: center;
+	padding: 0.6rem 0rem;
+}
+
+header div#top-nav div#usuario {
+	width: 30%;
+}
+
+header div#bottom-nav nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 0.4rem 0rem;
+}
+
+header div#top-nav div#usuario nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 0;
+}

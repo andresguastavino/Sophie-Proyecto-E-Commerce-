@@ -1,0 +1,56 @@
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+section.productos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 80%;
+	margin-left: 20%;
+}
+
+article.producto {
+	width: 33%;
+	padding: 0.6rem;
+}
+
+div.imagen-producto img {
+	width: 100%;
+}
+
+div.info-producto {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+div.nombre-producto, div.precio-producto {
+	width: 50%;
+	text-align: center;
+}
+
+div.nombre-producto {
+	text-transform: capitalize;
+}
+
+div.descripcion-producto {
+	text-align: justify;
+}
+
+div.botones {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+div.botones form button {
+	padding: 0.2rem 0.6rem;
+}
+
+aside {
+	position: fixed;
+	width: 10%;
+}
