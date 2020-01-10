@@ -30,4 +30,10 @@ class HomeController extends Controller
     {
         return view('politica_privacidad');
     }
+
+    public function compraExito()
+    {
+      dd(request()->preference_id);
+      return view('compra_exito');
+    }
 }

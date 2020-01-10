@@ -26,6 +26,8 @@ Route::get('/faq', 'HomeController@faq')->name('faq');
 Route::get('/contacto', 'HomeController@contacto')->name('contacto');
 Route::get('/politica_privacidad', 'HomeController@politica_privacidad')->name('politica_privacidad');
 
+Route::get('/compra/exito', 'HomeController@compraExito');
+
 Route::get('/perfil', 'UserController@perfil')->name('perfil')->middleware('auth');
 
 // Login con Google
@@ -35,5 +37,8 @@ Route::get('/google/redireccion', 'Auth\LoginController@handleGoogleCallback');
 // Login con Facebook
 Route::get('/facebook/login', 'Auth\LoginController@redirectToFacebook');
 Route::get('/facebook/redireccion', 'Auth\LoginController@handleFacebookCallback');
+
+// Mercadopago
+Route::post('/carrito/comprar', 'CarritoController@comprar');
 
 Auth::routes();

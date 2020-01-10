@@ -9,6 +9,11 @@
 			<input type="hidden" name="producto_id" value="{{$producto->id}}">
 			<button type="submit">Quitar de mi carrito</button>
 		</form>
+		<form action="/carrito/comprar" method="post">
+			@csrf
+			<input type="hidden" name="producto_id" value="{{$producto->id}}">
+			<button type="submit">Comprar</button>
+		</form>
 		<hr>
 	@empty
 		No tienes productos en el carrito actualmente
