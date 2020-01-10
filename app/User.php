@@ -10,6 +10,13 @@ class User extends Authenticatable
 {
     use Notifiable;
 
+    public $guarded = [];
+
+    public function productos()
+    {
+        return $this->belongsToMany(Producto::class, 'producto_usuario', 'user_id', 'producto_id')->withTimestamps();
+    }
+
     /**
      * The attributes that are mass assignable.
      *

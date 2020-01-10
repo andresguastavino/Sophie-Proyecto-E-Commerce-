@@ -17,4 +17,9 @@ class Producto extends Model
     {
       return $this->belongsTo(Categoria::class, 'categoria_id');
     }
+
+    public function usuario() 
+    {
+    	return $this->belongsToMany(User::class)->withTimestamps();
+    }
 }

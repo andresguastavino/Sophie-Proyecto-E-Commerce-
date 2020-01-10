@@ -33,10 +33,10 @@
 				</div>
 				<div class="info-producto">
 					<div class="nombre-producto">
-						<h2 class="text-wrap">{{$producto->nombre}}</h2>
+						<h4 class="text-wrap">{{$producto->nombre}}</h4>
 					</div>
 					<div class="precio-producto">
-						<h2 class="text-wrap">${{$producto->precio}}</h2>
+						<h4 class="text-wrap">${{$producto->precio}}</h4>
 					</div>
 					<div class="descripcion-producto">
 						<p>{{$producto->descripcion}}</p>
@@ -45,7 +45,9 @@
 						<form action="/home/{{ $producto->id }}" method="get">
 							<button type="submit">Ver mas</button>
 						</form>
-						<form action="aniadir.html" method="post">
+						<form action="/carrito/agregar" method="post">
+							@csrf
+							<input type="hidden" name="producto_id" value="{{$producto->id}}">
 							<button type="submit">Aniadir al carro</button>
 						</form>
 					</div>

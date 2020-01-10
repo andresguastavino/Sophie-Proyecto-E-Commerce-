@@ -18,7 +18,7 @@
 						<li><a class="nav-link" href="{{ route('login') }}">Iniciar sesión</a></li>
 						<li><a class="nav-link" href="{{ route('register') }}">Registrarme</a></li>
 					@endif
-					<li><a class="nav-link" href="{{ route('carrito') }}">Carrito</a></li>
+					<li><a class="nav-link" href="/carrito">Carrito</a></li>
 					@if (Auth::user())
 						<li><a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
             document.getElementById('logout-form').submit();">Cerrar sesion</a></li>
