@@ -12,7 +12,7 @@ class ProductoController extends Controller
       $productos = Producto::all();
       $categorias = \App\Categoria::all();
       $marcas = \App\Marca::all();
-
+      
       return view('home', compact('productos', 'categorias', 'marcas'));
     }
 

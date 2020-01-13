@@ -1,0 +1,8 @@
+textarea {
+  resize: none;
+  min-height: 80px;
+}
+
+#tabs div {
+  text-align: center;
+}

@@ -1,0 +1,11 @@
+#title {
+  text-align: center;
+}
+
+ol {
+  list-style: decimal;
+}
+
+#acordeon div {
+  line-height: 2rem;
+}

@@ -23,8 +23,9 @@ Route::post('/carrito/quitar', 'CarritoController@quitar');
 Route::post('/carrito/vaciar', 'CarritoController@vaciar');
 
 Route::get('/faq', 'HomeController@faq')->name('faq');
-Route::get('/contacto', 'HomeController@contacto')->name('contacto');
 Route::get('/politica_privacidad', 'HomeController@politica_privacidad')->name('politica_privacidad');
+
+Route::get('/contacto', 'ConsultaController@contacto')->name('contacto');
 
 Route::get('/compra/exito', 'HomeController@compraExito');
 
