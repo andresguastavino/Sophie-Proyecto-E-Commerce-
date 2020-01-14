@@ -10,7 +10,7 @@
 		<h2>Carrito</h2>
 	</div>
 
-	<section class="prodcutos">
+	<section class="productos">
 
 		@forelse ($productos as $producto)
 
@@ -42,12 +42,12 @@
 									<form action="/carrito/quitar" method="post">
 										@csrf
 										<input type="hidden" name="producto_id" value="{{$producto->id}}">
-										<button type="submit">Quitar de mi carrito</button>
+										<button type="submit"><i class="fas fa-trash-alt"></i>Quitar de mi carrito</button>
 									</form>
 									<form action="/carrito/comprar" method="post">
 										@csrf
 										<input type="hidden" name="producto_id" value="{{$producto->id}}">
-										<button type="submit">Comprar</button>
+										<button type="submit"><i class="fas fa-money-bill-wave"></i>Comprar</button>
 									</form>
 								</div>
 							</div>
@@ -66,9 +66,9 @@
 
 	@if (count($productos))
 
-		<form action="/carrito/vaciar" method="post">
+		<form action="/carrito/vaciar" class="text-right" method="post">
 			@csrf
-			<button type="submit">Vaciar carrito</button>
+			<button type="submit"><i class="fas fa-trash-alt"></i>Vaciar carrito</button>
 		</form>
 
 	@endif

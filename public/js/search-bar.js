@@ -1,10 +1,9 @@
-var searchButton = document.querySelector('button#search-button')
-var searchInput = searchButton.previousElementSibling
+var searchInput = document.querySelector('input#search')
 var productos = document.querySelectorAll('.producto')
 var busqueda = ''
 
-searchInput.onchange = (event) => {
-  busqueda = searchInput.value.toLowerCase()
+searchInput.onkeyup = (event) => {
+  busqueda = searchInput.value.trim().toLowerCase()
 
   for(var producto of productos) {
     if(busqueda != '') {
@@ -12,6 +11,8 @@ searchInput.onchange = (event) => {
 
       if(!nombreProducto.includes(busqueda)) {
         producto.style.display = 'none'
+      } else {
+        producto.style.display = 'block'
       }
     } else {
       producto.style.display = 'block'

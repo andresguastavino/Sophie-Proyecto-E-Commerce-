@@ -1,11 +1,19 @@
 footer {
   text-align: center;
   background-color: #000;
-  color: #fff;
+  color: #FFF;
   margin-bottom: 0;
   padding: 1rem;
 }
 
 footer h4 {
-  margin-bottom: 0;
+  color: #FFF;
+}
+
+footer a {
+  color: #FFF;
+}
+
+footer a:hover {
+  color: #e3dd2b;
 }

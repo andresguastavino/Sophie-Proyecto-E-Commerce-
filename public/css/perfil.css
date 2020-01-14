@@ -1,0 +1,17 @@
+.card {
+  text-align: center;
+}
+
+.separation-div {
+  width: 2px;
+  background-color: #ccc;
+  margin-right: 2rem;
+}
+
+.info-usuario div {
+  line-height: 2rem;
+}
+
+.imagen-usuario {
+  align-self: center;
+}

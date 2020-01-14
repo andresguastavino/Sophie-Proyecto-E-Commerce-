@@ -33,7 +33,7 @@
 						<form action="/carrito/agregar" method="post">
 							@csrf
 							<input type="hidden" name="producto_id" value="{{$producto->id}}">
-							<button type="submit">Añadir al carro</button>
+							<button type="submit"><i class="fas fa-cart-plus"></i>Añadir al carro</button>
 						</form>
 					</div>
         </div>

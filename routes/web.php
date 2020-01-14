@@ -13,9 +13,9 @@
 
 Route::get('/', 'ProductoController@listado')->name('home');
 Route::get('/home', 'ProductoController@listado')->name('home');
-Route::get('/home/{id}', 'ProductoController@detalle');
-Route::get('/home/categoria/{categoria_id}', 'ProductoController@filtrarPorCategoria');
-Route::get('/home/marca/{marca_id}', 'ProductoController@filtrarPorMarca');
+Route::get('/home/{id}', 'ProductoController@detalle')->name('home.detalle');
+Route::get('/home/categoria/{categoria_id}', 'ProductoController@filtrarPorCategoria')->name('home.filtrarPorCategoria');
+Route::get('/home/marca/{marca_id}', 'ProductoController@filtrarPorMarca')->name('home.filtrarPorMarca');
 
 Route::get('/carrito', 'CarritoController@listado');
 Route::post('/carrito/agregar', 'CarritoController@agregar');
@@ -31,6 +31,7 @@ Route::post('/contacto', 'ConsultaController@enviar');
 Route::get('/compra/exito', 'HomeController@compraExito');
 
 Route::get('/perfil', 'UserController@perfil')->name('perfil')->middleware('auth');
+Route::post('/perfil', 'UserController@actualizar')->middleware('auth');
 
 // Login con Google
 Route::get('/google/login', 'Auth\LoginController@redirectToGoogle');

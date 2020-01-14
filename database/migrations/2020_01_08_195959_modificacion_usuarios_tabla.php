@@ -15,6 +15,7 @@ class ModificacionUsuariosTabla extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
           $table->string('avatar')->nullable();
+          $table->string('surname');
           $table->boolean('admin')->default(false);
         });
     }

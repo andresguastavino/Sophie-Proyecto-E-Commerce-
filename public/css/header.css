@@ -1,3 +1,7 @@
+header {
+	background-color: #32A852;
+}
+
 header div#top-nav {
 	height: 6rem;
 	display: flex;
@@ -9,15 +13,54 @@ header div#top-nav {
 header div#top-nav div#buscar {
 	width: 30%;
 	text-align: center;
+	display: flex;
+	justify-content: center;
 }
 
-header div#top-nav div#buscar button {
-	padding: 0rem 0.6rem;
-}
-
-header div#top-nav div#buscar input {
-	width: 60%;
+header div#top-nav div#buscar div#input-buscar input {
 	text-align: center;
+	border: 0;
+	background-color: #32A852;
+	color: #FFF;
+	font-weight: bold;
+}
+
+::placeholder {
+  color: #000;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: #000;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: #000;
+}
+
+header div#top-nav div#buscar div#input-buscar input:placeholder {
+	text-align: center;
+	border: 0;
+	background-color: #32A852;
+	color: #000;
+}
+
+header div#top-nav div#buscar div#input-buscar {
+	border: 1px solid #000;
+	display: flex;
+	align-items: center;
+	border-top-right-radius: 0.2rem;
+	border-bottom-right-radius: 0.2rem;
+}
+
+header div#top-nav div#buscar div#label-buscar {
+	padding: 0.2rem 0.8rem;
+	display: flex;
+	align-items: center;
+	border: 1px solid #000;
+	border-right: 0;
+	border-top-left-radius: 0.2rem;
+	border-bottom-left-radius: 0.2rem;
 }
 
 header div#top-nav div#titulo {
@@ -35,6 +78,9 @@ header div#bottom-nav nav ul {
 	flex-wrap: wrap;
 	justify-content: space-around;
 	padding: 0.4rem 0rem;
+	width: 60%;
+	margin-right: 20%;
+	margin-left: 20%;
 }
 
 header div#top-nav div#usuario nav ul {

@@ -84,9 +84,5 @@
 @endsection
 
 @section('script')
-<script>
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  })
-</script>
+<script src="/js/tooltip.js"></script>
 @endsection

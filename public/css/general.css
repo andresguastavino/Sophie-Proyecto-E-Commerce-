@@ -2,26 +2,56 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	color: #000;
 }
-
+/*
+#581845 - violeta
+#900C3F - fuxia
+#C70039 - rosa
+#FF5733 - naranja
+#FFC30F - amarillo
+*/
 ul, ol {
 	list-style-type: none;
 }
 
 a {
 	text-decoration: none;
+	color: #000;
 }
 
 a:hover {
 	text-decoration: none;
+	color: #FFF;
+}
+
+a:hover i {
+	color: #FFF;
 }
 
 .div-separacion {
 	height: 0.1rem;
-	background-color: #ccc;
+	background-color: #000;
 }
 
 main {
 	margin-top: 2rem;
 	margin-bottom: 6rem;
+}
+
+i {
+	margin-right: 0.2rem;
+}
+
+button {
+	padding: 0.2rem 0.6rem;
+}
+
+body {
+	background-color: #385BAB;
+}
+
+.container {
+	margin-left: 10%;
+	margin-right: 10%;
 }

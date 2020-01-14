@@ -46,5 +46,6 @@
 
 @section('script')
 <script src="/js/jquery-ui/jquery-ui.min.js"></script>
+
 <script src="/js/acordeon.js"></script>
 @endsection
