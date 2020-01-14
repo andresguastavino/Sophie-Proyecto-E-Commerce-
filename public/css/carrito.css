@@ -1,0 +1,46 @@
+#title {
+  text-align: center;
+}
+
+.card {
+  text-align: center;
+}
+
+.separation-div {
+  width: 2px;
+  background-color: #ccc;
+  margin-right: 2rem;
+}
+
+.info-producto {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nombre-producto, .precio-producto {
+	width: 50%;
+	text-align: center;
+}
+
+.nombre-producto {
+	text-transform: capitalize;
+}
+
+.descripcion-producto {
+  text-align: justify;
+}
+
+.categoria-producto, .marca-producto, .descripcion-producto, .botones {
+  width: 100%;
+}
+
+.botones {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.botones form button {
+	padding: 0.2rem 0.6rem;
+}

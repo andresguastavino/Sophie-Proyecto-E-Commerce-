@@ -26,6 +26,7 @@ Route::get('/faq', 'HomeController@faq')->name('faq');
 Route::get('/politica_privacidad', 'HomeController@politica_privacidad')->name('politica_privacidad');
 
 Route::get('/contacto', 'ConsultaController@contacto')->name('contacto');
+Route::post('/contacto', 'ConsultaController@enviar');
 
 Route::get('/compra/exito', 'HomeController@compraExito');
 

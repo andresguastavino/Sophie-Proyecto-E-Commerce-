@@ -20,3 +20,8 @@ a:hover {
 	height: 0.1rem;
 	background-color: #ccc;
 }
+
+main {
+	margin-top: 2rem;
+	margin-bottom: 6rem;
+}

@@ -8,7 +8,7 @@
 <main>
 	<aside>
 		<div class="categorias">
-			<h4>Por categorias</h4>
+			<h4>Por categorías</h4>
 			<ul>
 				@foreach ($categorias as $categoria)
 					<li><a href="/home/categoria/{{ $categoria->id }}">{{ $categoria->nombre }}</a></li>
@@ -24,6 +24,13 @@
 				@endforeach
 			</ul>
 		</div>
+		<div class="div-separacion"></div>
+		<div class="defecto">
+			<h4>Por defecto</h4>
+			<ul>
+				<li><a href="/home">Por defecto</a></li>
+			</ul>
+		</div>
 	</aside>
 	<section class="productos">
 		@foreach ($productos as $producto)
@@ -33,7 +40,7 @@
 				</div>
 				<div class="info-producto">
 					<div class="nombre-producto">
-						<h4 class="text-wrap">{{$producto->nombre}}</h4>
+						<h4 class="text-wrap" id="nombre">{{$producto->nombre}}</h4>
 					</div>
 					<div class="precio-producto">
 						<h4 class="text-wrap">${{$producto->precio}}</h4>
@@ -43,12 +50,12 @@
 					</div>
 					<div class="botones">
 						<form action="/home/{{ $producto->id }}" method="get">
-							<button type="submit">Ver mas</button>
+							<button type="submit">Ver en detalle</button>
 						</form>
 						<form action="/carrito/agregar" method="post">
 							@csrf
 							<input type="hidden" name="producto_id" value="{{$producto->id}}">
-							<button type="submit">Aniadir al carro</button>
+							<button type="submit">Añadir al carro</button>
 						</form>
 					</div>
 				</div>
@@ -56,4 +63,8 @@
 		@endforeach
 	</section>
 </main>
+@endsection
+
+@section('script')
+<script src="/js/search-bar.js"></script>
 @endsection

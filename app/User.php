@@ -17,11 +17,6 @@ class User extends Authenticatable
         return $this->belongsToMany(Producto::class, 'producto_usuario', 'user_id', 'producto_id')->withTimestamps();
     }
 
-    public function consultas()
-    {
-      return $this->hasMany(Consulta::class, 'user_id');
-    }
-
     /**
      * The attributes that are mass assignable.
      *

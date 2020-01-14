@@ -17,9 +17,8 @@ class ConsultasTable extends Migration
           $table->bigIncrements('id');
           $table->string('asunto');
           $table->string('consulta');
-          $table->string('respuesta');
-          $table->bigInteger('user_id')->unsigned()->index();
-          $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+          $table->string('respuesta')->nullable();
+          $table->string('email');
           $table->rememberToken();
           $table->timestamps();
         });
