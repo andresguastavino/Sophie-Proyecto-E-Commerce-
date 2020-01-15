@@ -1,5 +1,6 @@
 header {
-	background-color: #32A852;
+	background-color: #000;
+	font-family: 'Lobster', cursive;
 }
 
 header div#top-nav {
@@ -18,7 +19,7 @@ header div#top-nav div#buscar {
 }
 
 header div#top-nav div#titulo h1 a:hover {
-	color: #000;
+	color: #FFF;
 	font-weight: normal;
 }
 
@@ -46,12 +47,12 @@ header div#top-nav div#buscar div#input-buscar input {
 header div#top-nav div#buscar div#input-buscar input {
 	text-align: center;
 	border: 0;
-	background-color: #32A852;
-	color: #000;
+	background-color: #000;
+	color: #FFF;
 }
 
 header div#top-nav div#buscar div#input-buscar {
-	border: 1px solid #000;
+	border: 1px solid #FFF;
 	display: flex;
 	align-items: center;
 	border-top-right-radius: 0.2rem;
@@ -62,7 +63,7 @@ header div#top-nav div#buscar div#label-buscar {
 	padding: 0.2rem 0.8rem;
 	display: flex;
 	align-items: center;
-	border: 1px solid #000;
+	border: 1px solid #FFF;
 	border-right: 0;
 	border-top-left-radius: 0.2rem;
 	border-bottom-left-radius: 0.2rem;
@@ -93,4 +94,27 @@ header div#top-nav div#usuario nav ul {
 	flex-wrap: wrap;
 	justify-content: center;
 	margin-bottom: 0;
+}
+
+a {
+	color: #FFF;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #e3dd2b;
+	font-weight: bold;
+}
+
+i {
+	color: #FFF;
+}
+
+a:hover i {
+	color: #e3dd2b;
+}
+
+.div-separacion {
+	height: 0.1rem;
+	background-color: #FFF;
 }

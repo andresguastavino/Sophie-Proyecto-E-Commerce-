@@ -2,6 +2,7 @@ main {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	font-family: 'Montserrat Alternates', sans-serif;
 }
 
 section.productos {
@@ -30,6 +31,7 @@ div.info-producto {
 div.nombre-producto, div.precio-producto {
 	width: 50%;
 	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 div.nombre-producto {
@@ -65,9 +67,22 @@ aside {
 	background-color: #FFF;
 }
 
+aside a {
+	color: #343A40;
+}
+
 aside a:hover {
-	color: #0f5c24;
+	color: #343A40;
 	font-weight: bold;
+}
+
+aside h4 {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.div-separacion {
+	height: 0.1rem;
+	background-color: #343A40;
 }
 
 #go-top {
@@ -80,7 +95,7 @@ aside a:hover {
 }
 
 #go-top i {
-	color: #FFF;
+	color: #343A40;
 }
 
 .selected {

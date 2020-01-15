@@ -1,39 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:300i,400i,500i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	color: #000;
 }
-/*
-#581845 - violeta
-#900C3F - fuxia
-#C70039 - rosa
-#FF5733 - naranja
-#FFC30F - amarillo
-*/
+
 ul, ol {
 	list-style-type: none;
-}
-
-a {
-	text-decoration: none;
-	color: #000;
-}
-
-a:hover {
-	text-decoration: none;
-	color: #FFF;
-	font-weight: bold;
-}
-
-a:hover i {
-	color: #FFF;
-	font-weight: bold;
-}
-
-.div-separacion {
-	height: 0.1rem;
-	background-color: #000;
 }
 
 main {
@@ -50,23 +26,15 @@ button {
 	border: 1px solid #000;
 	border-radius: 10px;
 	background-color: #32A852;
-}
-
-button i {
-	color: #FFF;
+	font-family: 'Montserrat Alternates', sans-serif;
 }
 
 button:hover {
-	color: #FFF;
 	font-weight: bold;
 }
 
-button:hover i {
-	color: #FFF;
-}
-
 body {
-	background-color: #385BAB;
+	background-color: #BBE65E;
 }
 
 .container {
@@ -74,10 +42,27 @@ body {
 	margin-right: 10%;
 }
 
-.btn-dark {
-	background-color: #0f5c24;
+.card {
+	border: 1px solid #343A40;
 }
 
-.btn-dark:hover {
-	background-color: #0f5c24;
+.card-header {
+	font-family: 'Lobster', cursive;
+	background-color: #343A40;
+	color: #FFF;
+}
+
+h3.ui-state-active {
+	font-family: 'Ubuntu', sans-serif;
+	background-color: #343A40;
+	font-weight: bold;
+	border: 1px solid #000;
+}
+
+div.ui-accordion-content {
+	border: 1px solid #000;
+}
+
+.ui-accordion-content {
+	font-family: 'Montserrat Alternates', sans-serif;
 }

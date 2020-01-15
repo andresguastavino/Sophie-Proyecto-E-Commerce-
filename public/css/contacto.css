@@ -1,14 +1,5 @@
 .card {
-  border: 1px solid #000;
   margin-bottom: 4rem;
-}
-
-.card-header {
-  background-color: #0f5c24;
-}
-
-.card-header h2 {
-  color: #FFF;
 }
 
 textarea {
@@ -21,10 +12,6 @@ textarea {
 }
 
 #tabs .ui-state-active {
-  background: #0f5c24;
+  background: #343A40;
   font-weight: bold;
-}
-
-a:hover {
-  font-weight: normal;
 }

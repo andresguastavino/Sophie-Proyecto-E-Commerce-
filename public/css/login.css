@@ -1,22 +1,9 @@
-.card {
-  border: 1px solid #000;
-}
-
-.card-header {
-  background-color: #0f5c24;
-}
-
-.card-header h2 {
-  color: #FFF;
-}
-
 .btn-link {
-  color: #093b17;
-  text-decoration: none;
+  color: #343A40;
+  text-decoration: underline;
 }
 
 .btn-link:hover {
-  color: #0f5c24;
-  text-decoration: underline;
+  color: #000;
   font-weight: bold;
 }

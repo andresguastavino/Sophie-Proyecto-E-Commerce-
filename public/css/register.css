@@ -1,22 +1,10 @@
-.card {
-  border: 1px solid #000;
-}
-
-.card-header {
-  background-color: #0f5c24;
-}
-
-.card-header h2 {
-  color: #FFF;
-}
-
-a {
-  color: #093b17;
+main a {
+  color: #343A40;
   text-decoration: underline;
 }
 
-a:hover {
-  color: #0f5c24;
-  text-decoration: underline;
+main a:hover {
+  color: #000;
   font-weight: bold;
+  text-decoration: underline;
 }

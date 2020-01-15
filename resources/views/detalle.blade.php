@@ -11,24 +11,29 @@
       <div class="col-md-4 imagen-producto">
         <img src="/storage/productos/{{$producto->imagen}}" class="card-img" alt="...">
       </div>
-      <div class="separation-div"></div>
-      <div class="col-md-7">
+      <div class="col-md-8">
         <div class="card-body info-producto">
           <div class="nombre-producto">
-            <h4 class="card-title">{{$producto->nombre}}</h4>
+            <h4 class="card-title"><strong class="cursive">Producto:</strong> {{$producto->nombre}}</h4>
           </div>
+          <div class="div-separacion"></div>
           <div class="precio-producto">
-            <h4 class="card-title">{{$producto->precio}}</h4>
+            <h4 class="card-title"><strong class="cursive">Precio (ARS):</strong> ${{$producto->precio}}</h4>
           </div>
+          <div class="div-separacion"></div>
           <div class="categoria-producto">
-            <h5 class="card-title">{{$producto->categoria->nombre}}</h5>
+            <h4 class="card-title"><strong class="cursive">Categoria del producto:</strong> {{$producto->categoria->nombre}}</h4>
           </div>
+          <div class="div-separacion"></div>
           <div class="marca-producto">
-            <h5 class="card-title">{{$producto->marca->nombre}}</h5>
+            <h4 class="card-title"><strong class="cursive">Marca del producto:</strong> {{$producto->marca->nombre}}</h4>
           </div>
+          <div class="div-separacion"></div>
           <div class="descripcion-producto">
+            <h4 class="card-title"><strong class="cursive">Sobre este producto:</strong></h4>
             <p>{{$producto->descripcion}}</p>
           </div>
+          <div class="div-separacion"></div>
           <div class="botones">
 						<form action="/carrito/agregar" method="post">
 							@csrf

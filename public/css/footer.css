@@ -8,12 +8,21 @@ footer {
 
 footer h4 {
   color: #FFF;
+  margin: 0rem 2rem;
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
-footer a {
+footer h4 a{
   color: #FFF;
 }
 
 footer a:hover {
   color: #e3dd2b;
+}
+
+footer div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }

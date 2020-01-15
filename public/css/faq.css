@@ -1,24 +1,7 @@
-.card {
-  border: 1px solid #000;
-}
-
-.card-header {
-  background-color: #0f5c24;
-}
-
-.card-header h2 {
-  color: #FFF;
-}
-
 ol {
   list-style: decimal;
 }
 
 #acordeon div {
   line-height: 2rem;
-}
-
-.ui-state-active {
-  background-color: #0f5c24;
-  font-weight: bold;
 }
