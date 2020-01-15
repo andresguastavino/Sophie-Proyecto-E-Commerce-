@@ -5,6 +5,30 @@ main {
 	font-family: 'Montserrat Alternates', sans-serif;
 }
 
+.banner {
+	margin-bottom: 2rem;
+	position: relative;
+}
+
+.banner img {
+	width: 100%;
+	left: 0;
+}
+
+.banner h2 {
+	position: absolute;
+	top: 36%;
+	left: 34%;
+	z-index: 100;
+	font-family: 'Lobster', cursive;
+	font-size: 8rem;
+	color: #FFF;
+	border: 1px solid #000;
+	background-color: rgba(0, 0, 0, 0.2);
+	padding: 0.2rem;
+	cursor: default;
+}
+
 section.productos {
 	display: flex;
 	flex-wrap: wrap;
@@ -29,7 +53,7 @@ div.info-producto {
 }
 
 div.nombre-producto, div.precio-producto {
-	width: 50%;
+	width: 100%;
 	text-align: center;
 	font-family: 'Ubuntu', sans-serif;
 }

@@ -10,6 +10,10 @@
 
 @section('content')
 <main>
+	<div class="banner">
+		<img src="/storage/banner.png" alt="">
+		<h2>Sophie</h2>
+	</div>
 	<aside>
 		<div class="categorias">
 			<h4>Por categorías</h4>
