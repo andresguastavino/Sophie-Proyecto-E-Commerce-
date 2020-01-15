@@ -13,7 +13,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header text-center">{{ __('Contacto') }}</div>
+                <div class="card-header text-center"><h2>{{ __('Contacto') }}</h2></div>
 
                 <div class="card-body">
                     <form method="POST" action="/contacto">
@@ -97,7 +97,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-dark" name="button">
+                                <button type="submit" name="button" class="btn btn-dark">
                                     {{ __('Enviar consulta') }}
                                 </button>
                             </div>
@@ -107,7 +107,7 @@
             </div>
 
             <div class="card">
-              <div class="card-header text-center">{{ __('Consultas hechas') }}</div>
+              <div class="card-header text-center"><h2>{{ __('Consultas hechas') }}</h2></div>
 
               <div class="card-body" id="tabs">
                 <ul>
@@ -164,7 +164,7 @@
                         <div class="consulta">
                           {{$consulta->consulta}}
                         </div>
-                        
+
                         @if ($consulta->respuesta)
                           <hr>
                           <div class="respuesta">

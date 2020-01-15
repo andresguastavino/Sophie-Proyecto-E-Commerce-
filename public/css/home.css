@@ -44,12 +44,15 @@ div.botones {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
 }
 
-div.botones form button {
-	font-size: 0.9rem;
-	padding: 0.2rem 0.6rem;
+div.botones form {
+	width: 100%;
+}
+
+div.botones button {
+	width: 100%;
+	margin: 0.2rem 0;
 }
 
 aside {
@@ -78,4 +81,8 @@ aside a:hover {
 
 #go-top i {
 	color: #FFF;
+}
+
+.selected {
+	box-shadow: 3px 3px 2px 0 #000;
 }

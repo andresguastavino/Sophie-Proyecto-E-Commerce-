@@ -42,12 +42,12 @@
 									<form action="/carrito/quitar" method="post">
 										@csrf
 										<input type="hidden" name="producto_id" value="{{$producto->id}}">
-										<button type="submit"><i class="fas fa-trash-alt"></i>Quitar de mi carrito</button>
+										<button type="submit" class="btn btn-dark"><i class="fas fa-trash-alt"></i>Quitar de mi carrito</button>
 									</form>
 									<form action="/carrito/comprar" method="post">
 										@csrf
 										<input type="hidden" name="producto_id" value="{{$producto->id}}">
-										<button type="submit"><i class="fas fa-money-bill-wave"></i>Comprar</button>
+										<button type="submit" class="btn btn-dark"><i class="fas fa-money-bill-wave"></i>Comprar</button>
 									</form>
 								</div>
 							</div>

@@ -1,11 +1,15 @@
 @extends('layouts.app')
 
+@section('css')
+<link rel="stylesheet" href="/css/register.css">
+@endsection
+
 @section('content')
 <main>
   <div class="row justify-content-center">
       <div class="col-md-8">
           <div class="card">
-              <div class="card-header text-center">{{ __('Registrarme') }}</div>
+              <div class="card-header text-center"><h2>{{ __('Registrarme') }}</h2></div>
 
               <div class="card-body">
                   <form method="POST" action="{{ route('register') }}">
@@ -81,7 +85,7 @@
                                   <input class="form-check-input" type="checkbox" name="accept" id="accept" {{ old('accept') ? 'checked' : '' }}>
 
                                   <label class="form-check-label" for="accept" style="text-align: center;">
-                                    {{ __('Estoy de acuerdo con la ') }}<a href="/politica_privacidad" target="_blank"><u>{{ __('Politica de Privacidad de Sophie') }}</u></a>
+                                    {{ __('Estoy de acuerdo con la ') }}<a href="/politica_privacidad" target="_blank">{{ __('Politica de Privacidad de Sophie') }}</a>
                                   </label>
                               </div>
                           </div>

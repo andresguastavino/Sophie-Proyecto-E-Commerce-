@@ -53,12 +53,12 @@
 					</div>
 					<div class="botones">
 						<form action="/home/{{ $producto->id }}" method="get">
-							<button type="submit"><i class="fas fa-info-circle"></i>Ver en detalle</button>
+							<button type="submit" class="btn btn-dark"><i class="fas fa-info-circle"></i>Ver en detalle</button>
 						</form>
 						<form action="/carrito/agregar" method="post">
 							@csrf
 							<input type="hidden" name="producto_id" value="{{$producto->id}}">
-							<button type="submit"><i class="fas fa-cart-plus"></i>Añadir al carro</button>
+							<button type="submit" class="btn btn-dark"><i class="fas fa-cart-plus"></i>Añadir al carro</button>
 						</form>
 					</div>
 				</div>
@@ -74,6 +74,7 @@
 @section('script')
 <script src="js/jquery-ui/jquery-ui.min.js"></script>
 
+<script src="/js/selected.js"></script>
 <script src="/js/scrollTop.js"></script>
 <script src="/js/search-bar.js"></script>
 <script src="/js/tooltip.js"></script>

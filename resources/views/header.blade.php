@@ -6,7 +6,7 @@
 					<label for="search"><i class="fas fa-search"></i></label>
 				</div>
 				<div id="input-buscar">
-					<input type="text" name="search" id="search" placeholder="Buscar" value="">
+					<input type="text" name="search" id="search" placeholder="Buscar por nombre" onfocus="this.setAttribute('placeholder', '')" onblur="if(this.value == '') this.setAttribute('placeholder', 'Buscar por nombre')" value="">
 				</div>
 			@endif
 		</div>

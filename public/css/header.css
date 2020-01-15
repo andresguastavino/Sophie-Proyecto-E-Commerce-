@@ -17,6 +17,11 @@ header div#top-nav div#buscar {
 	justify-content: center;
 }
 
+header div#top-nav div#titulo h1 a:hover {
+	color: #000;
+	font-weight: normal;
+}
+
 header div#top-nav div#buscar div#input-buscar input {
 	text-align: center;
 	border: 0;
@@ -26,19 +31,19 @@ header div#top-nav div#buscar div#input-buscar input {
 }
 
 ::placeholder {
-  color: #000;
+  color: #FFF;
   opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
- color: #000;
+ color: #FFF;
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
- color: #000;
+ color: #FFF;
 }
 
-header div#top-nav div#buscar div#input-buscar input:placeholder {
+header div#top-nav div#buscar div#input-buscar input {
 	text-align: center;
 	border: 0;
 	background-color: #32A852;

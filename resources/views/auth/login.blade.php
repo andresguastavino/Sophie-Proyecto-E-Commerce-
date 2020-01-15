@@ -1,11 +1,15 @@
 @extends('layouts.app')
 
+@section('css')
+<link rel="stylesheet" href="/css/login.css">
+@endsection
+
 @section('content')
 <main>
   <div class="row justify-content-center">
     <div class="col-md-8">
       <div class="card">
-        <div class="card-header text-center">{{ __('Login') }}</div>
+        <div class="card-header text-center"><h2>{{ __('Login') }}</h2></div>
 
         <div class="card-body">
           <form method="POST" action="{{ route('login') }}">
@@ -67,11 +71,11 @@
                 <button type="submit" class="btn btn-dark">
                   {{ __('Login') }}
                 </button>
-                <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" title="Iniciar sesión con Google" onclick="window.location.replace('/google/login');">
-                  Google
+                <button type="button" class="btn btn-dark login-link" data-toggle="tooltip" data-placement="bottom" title="Iniciar sesión con Google" onclick="window.location.replace('/google/login');">
+                  <i class="fab fa-google"></i>Google
                 </button>
-                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Iniciar sesión con Facebook" onclick="window.location.replace('/facebook/login');">
-                  Facebook
+                <button type="button" class="btn btn-dark login-link" data-toggle="tooltip" data-placement="bottom" title="Iniciar sesión con Facebook" onclick="window.location.replace('/facebook/login');">
+                  <i class="fab fa-facebook-f"></i>Facebook
                 </button>
               </div>
             </div>

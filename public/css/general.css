@@ -23,10 +23,12 @@ a {
 a:hover {
 	text-decoration: none;
 	color: #FFF;
+	font-weight: bold;
 }
 
 a:hover i {
 	color: #FFF;
+	font-weight: bold;
 }
 
 .div-separacion {
@@ -45,6 +47,22 @@ i {
 
 button {
 	padding: 0.2rem 0.6rem;
+	border: 1px solid #000;
+	border-radius: 10px;
+	background-color: #32A852;
+}
+
+button i {
+	color: #FFF;
+}
+
+button:hover {
+	color: #FFF;
+	font-weight: bold;
+}
+
+button:hover i {
+	color: #FFF;
 }
 
 body {
@@ -54,4 +72,12 @@ body {
 .container {
 	margin-left: 10%;
 	margin-right: 10%;
+}
+
+.btn-dark {
+	background-color: #0f5c24;
+}
+
+.btn-dark:hover {
+	background-color: #0f5c24;
 }

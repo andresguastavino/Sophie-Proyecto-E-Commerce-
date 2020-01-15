@@ -10,15 +10,13 @@
   color: #FFF;
 }
 
-ol {
-  list-style: decimal;
+.btn-link {
+  color: #093b17;
+  text-decoration: none;
 }
 
-#acordeon div {
-  line-height: 2rem;
-}
-
-.ui-state-active {
-  background-color: #0f5c24;
+.btn-link:hover {
+  color: #0f5c24;
+  text-decoration: underline;
   font-weight: bold;
 }
