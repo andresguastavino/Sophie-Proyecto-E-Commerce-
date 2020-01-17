@@ -99,7 +99,7 @@ class LoginController extends Controller
           $user->password = Hash::make($this->generateRandomString(20));
           $user->avatar = 'default.jpg';
 
-          if(count($userFullName) >= 3) {
+          if(count($userFullname) >= 3) {
             $user->name = $userFullname[0] . ' ' . $userFullname[1];
             $user->surname = $userFullname[2];
           } else {
