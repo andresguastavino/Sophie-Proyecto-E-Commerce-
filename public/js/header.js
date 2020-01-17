@@ -7,7 +7,8 @@ input.onfocus = () => {
 }
 
 input.onblur = () => {
-  if(input.value == '') {
+  if(input.value.trim() == '') {
+    input.value = ''
     input.setAttribute('placeholder', 'Buscar por nombre')
 
     $('div.banner').fadeIn('fast')
