@@ -1,0 +1,39 @@
+.card {
+  margin-bottom: 4rem;
+}
+
+::placeholder {
+  color: #343A40;
+}
+
+#tabs div {
+  text-align: center;
+}
+
+#tabs .ui-state-active {
+  background: #343A40;
+  font-weight: bold;
+}
+
+#tabs-1 div.row {
+  display: flex;
+  align-items: center;
+}
+
+.user, .categoria, .marca, .producto {
+  padding: 0.4rem 0rem;
+  display: flex;
+  align-items: center;
+}
+
+.producto img {
+  width: 100%;
+}
+
+button.btn.disabled {
+  cursor: default;
+}
+
+button.btn.disabled:active {
+  border: 0;
+}

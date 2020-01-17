@@ -21,9 +21,9 @@ class ProductosTabla extends Migration
           $table->longText('descripcion');
           $table->integer('descuento')->default(0);
           $table->bigInteger('categoria_id')->unsigned()->index();
-          $table->foreign('categoria_id')->references('id')->on('categorias')->onDelete('cascade');
+          $table->foreign('categoria_id')->references('id')->on('categorias');
           $table->bigInteger('marca_id')->unsigned()->index();
-          $table->foreign('marca_id')->references('id')->on('marcas')->onDelete('cascade');
+          $table->foreign('marca_id')->references('id')->on('marcas');
           $table->rememberToken();
           $table->timestamps();
         });

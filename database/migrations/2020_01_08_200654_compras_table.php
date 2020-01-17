@@ -16,7 +16,7 @@ class ComprasTable extends Migration
         Schema::create('compras', function (Blueprint $table) {
           $table->bigIncrements('id');
           $table->bigInteger('producto_id')->unsigned()->index();
-          $table->foreign('producto_id')->references('id')->on('productos')->onDelete('cascade');
+          $table->foreign('producto_id')->references('id')->on('productos');
           $table->rememberToken();
           $table->timestamps();
         });

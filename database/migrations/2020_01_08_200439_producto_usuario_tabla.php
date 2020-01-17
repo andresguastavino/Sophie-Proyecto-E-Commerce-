@@ -16,9 +16,9 @@ class ProductoUsuarioTabla extends Migration
         Schema::create('producto_usuario', function (Blueprint $table) {
           $table->bigIncrements('id');
           $table->bigInteger('producto_id')->unsigned()->index();
-          $table->foreign('producto_id')->references('id')->on('productos')->onDelete('cascade');
+          $table->foreign('producto_id')->references('id')->on('productos');
           $table->bigInteger('user_id')->unsigned()->index();
-          $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+          $table->foreign('user_id')->references('id')->on('users');
           $table->rememberToken();
           $table->timestamps();
         });

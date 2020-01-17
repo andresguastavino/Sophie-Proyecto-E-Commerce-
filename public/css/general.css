@@ -22,15 +22,13 @@ i {
 }
 
 button {
-	padding: 0.2rem 0.6rem;
-	border: 1px solid #000;
-	border-radius: 10px;
-	background-color: #32A852;
 	font-family: 'Montserrat Alternates', sans-serif;
+	border: 1px solid #000;
 }
 
 button:hover {
 	font-weight: bold;
+	border-color: #000;
 }
 
 body {

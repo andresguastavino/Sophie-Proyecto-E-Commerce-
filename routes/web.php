@@ -25,6 +25,29 @@ Route::post('/carrito/vaciar', 'CarritoController@vaciar');
 Route::get('/faq', 'HomeController@faq')->name('faq');
 Route::get('/politica_privacidad', 'HomeController@politica_privacidad')->name('politica_privacidad');
 
+Route::get('/gestor', 'GestorController@gestor')->name('gestor')->middleware('admin');
+
+Route::post('/gestor/dar-admin', 'GestorController@darAdmin')->middleware('admin');
+Route::post('/gestor/quitar-admin', 'GestorController@quitarAdmin')->middleware('admin');
+
+Route::get('/gestor/agregar-producto', 'GestorController@formProducto')->middleware('admin');
+Route::post('/gestor/agregar-producto', 'GestorController@agregarProducto')->middleware('admin');
+Route::get('/gestor/modificar-producto', 'GestorController@formProducto')->middleware('admin');
+Route::post('/gestor/modificar-producto', 'GestorController@modificarProducto')->middleware('admin');
+Route::post('/gestor/quitar-producto', 'GestorController@quitarProducto')->middleware('admin');
+
+Route::get('/gestor/agregar-marca', 'GestorController@formMarca')->middleware('admin');
+Route::post('/gestor/agregar-marca', 'GestorController@agregarMarca')->middleware('admin');
+Route::get('/gestor/modificar-marca', 'GestorController@formMarca')->middleware('admin');
+Route::post('/gestor/modificar-marca', 'GestorController@modificarMarca')->middleware('admin');
+Route::post('/gestor/quitar-marca', 'GestorController@quitarMarca')->middleware('admin');
+
+Route::get('/gestor/agregar-categoria', 'GestorController@formCategoria')->middleware('admin');
+Route::post('/gestor/agregar-categoria', 'GestorController@agregarCategoria')->middleware('admin');
+Route::get('/gestor/modificar-categoria', 'GestorController@formCategoria')->middleware('admin');
+Route::post('/gestor/modificar-categoria', 'GestorController@modificarCategoria')->middleware('admin');
+Route::post('/gestor/quitar-categoria', 'GestorController@quitarCategoria')->middleware('admin');
+
 Route::get('/contacto', 'ConsultaController@contacto')->name('contacto');
 Route::post('/contacto', 'ConsultaController@enviar');
 

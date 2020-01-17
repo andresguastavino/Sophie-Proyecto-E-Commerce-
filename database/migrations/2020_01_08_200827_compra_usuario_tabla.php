@@ -16,9 +16,9 @@ class CompraUsuarioTabla extends Migration
         Schema::create('compra_usuario', function (Blueprint $table) {
           $table->bigIncrements('id');
           $table->bigInteger('compra_id')->unsigned()->index();
-          $table->foreign('compra_id')->references('id')->on('compras')->onDelete('cascade');
+          $table->foreign('compra_id')->references('id')->on('compras');
           $table->bigInteger('user_id')->unsigned()->index();
-          $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+          $table->foreign('user_id')->references('id')->on('users');
           $table->rememberToken();
           $table->timestamps();
         });

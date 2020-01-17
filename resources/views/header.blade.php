@@ -6,7 +6,7 @@
 					<label for="search"><i class="fas fa-search"></i></label>
 				</div>
 				<div id="input-buscar">
-					<input type="text" name="search" id="search" placeholder="Buscar por nombre" onfocus="this.setAttribute('placeholder', '')" onblur="if(this.value == '') this.setAttribute('placeholder', 'Buscar por nombre')" value="">
+					<input type="text" name="search" id="search" placeholder="Buscar por nombre" value="">
 				</div>
 			@endif
 		</div>
@@ -42,6 +42,9 @@
 				<li><a class="nav-link" href="{{ route('home') }}"><i class="fas fa-home"></i>Home</a></li>
 				<li><a class="nav-link" href="{{ route('faq') }}"><i class="fas fa-question"></i>FAQ</a></li>
 				<li><a class="nav-link" href="{{ route('contacto') }}"><i class="fas fa-map-marker-alt"></i>Contacto</a></li>
+				@admin
+					<li><a class="nav-link" href="/gestor"><i class="fas fa-tools"></i>Gestor</a></li>
+				@endadmin
 			</ul>
 		</nav>
 	</div>
