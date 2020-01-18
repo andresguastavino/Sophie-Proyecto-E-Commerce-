@@ -14,6 +14,14 @@
 		<img src="/storage/banner.png" alt="">
 		<h2>Sophie</h2>
 	</div>
+	<div id="buscar">
+		<div id="label-buscar">
+			<label for="search"><i class="fas fa-search"></i></label>
+		</div>
+		<div id="input-buscar">
+			<input type="text" name="search" id="search" placeholder="Buscar producto por nombre" value="">
+		</div>
+	</div>
 	<aside>
 		<div class="categorias">
 			<h4>Por categorías</h4>
@@ -78,7 +86,7 @@
 @section('script')
 <script src="js/jquery-ui/jquery-ui.min.js"></script>
 
-<script src="/js/selected.js"></script>
+<!--	<script src="/js/selected.js"></script> -->
 <script src="/js/scrollTop.js"></script>
 <script src="/js/search-bar.js"></script>
 <script src="/js/tooltip.js"></script>

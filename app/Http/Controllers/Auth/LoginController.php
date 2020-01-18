@@ -78,45 +78,6 @@ class LoginController extends Controller
        return redirect('/perfil');
     }
 
-    public function redirectToFacebook()
-    {
-        return Socialite::driver('facebook')->redirect();
-    }
-
-    public function handleFacebookCallback()
-    {
-        $userFacebook = Socialite::driver('facebook')->user();
-
-        // busco al usuario usando el modelo con lo que viene de $user->email
-        $user = User::where('email', $userFacebook->email)->first();
-
-        // si no esta lo registro
-        if(!$user) {
-          $userFullname = explode(' ', $userFacebook->name);
-
-          $user = new User;
-          $user->email = $userFacebook->email;
-          $user->password = Hash::make($this->generateRandomString(20));
-          $user->avatar = 'default.jpg';
-
-          if(count($userFullname) >= 3) {
-            $user->name = $userFullname[0] . ' ' . $userFullname[1];
-            $user->surname = $userFullname[2];
-          } else {
-            $user->name = $userFullname[0];
-            $user->surname = $userFullname[1];
-          }
-
-          $user->save();
-        }
-
-       //lo logeo
-       \Auth::login($user);
-
-       //luego redirijo hacio donde quiera
-       return redirect('/perfil');
-    }
-
     function generateRandomString($length = 10) {
         $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
         $charactersLength = strlen($characters);

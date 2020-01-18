@@ -2,6 +2,17 @@ var searchInput = document.querySelector('input#search')
 var productos = document.querySelectorAll('.producto')
 var busqueda = ''
 
+searchInput.onfocus = () => {
+  searchInput.setAttribute('placeholder', '')
+}
+
+searchInput.onblur = () => {
+  if(searchInput.value.trim() == '') {
+    searchInput.value = ''
+    searchInput.setAttribute('placeholder', 'Buscar producto por nombre')
+  }
+}
+
 searchInput.onkeyup = (event) => {
   busqueda = searchInput.value.trim().toLowerCase()
 

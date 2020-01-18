@@ -25,7 +25,7 @@ Route::post('/carrito/vaciar', 'CarritoController@vaciar');
 Route::get('/faq', 'HomeController@faq')->name('faq');
 Route::get('/politica_privacidad', 'HomeController@politica_privacidad')->name('politica_privacidad');
 
-Route::get('/gestor', 'GestorController@gestor')->name('gestor')->middleware('admin');
+Route::get('/gestor', 'GestorController@gestor')->name('gestor')->middleware('auth');
 
 Route::post('/gestor/dar-admin', 'GestorController@darAdmin')->middleware('admin');
 Route::post('/gestor/quitar-admin', 'GestorController@quitarAdmin')->middleware('admin');

@@ -21,7 +21,7 @@ main {
 	left: 34%;
 	z-index: 100;
 	font-family: 'Lobster', cursive;
-	font-size: 8rem;
+	font-size: 3.8rem;
 	color: #FFF;
 	border: 1px solid #000;
 	background-color: rgba(0, 0, 0, 0.2);
@@ -33,13 +33,13 @@ section.productos {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	width: 79%;
+	width: 100%;
 }
 
 article.producto {
-	width: 33%;
+	width: 100%;
 	padding: 0.6rem;
-	margin-bottom: 0.2rem;
+	margin-bottom: 1rem;
 	background-color: #FFF;
 }
 
@@ -82,11 +82,11 @@ div.botones button {
 }
 
 aside {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 182px;
+	display: none;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 182px;
 	padding: 1rem;
-	width: 19%;
 	height: max-content;
 	background-color: #FFF;
 }
@@ -124,4 +124,106 @@ aside h4 {
 
 .selected {
 	box-shadow: 3px 3px 2px 0 #000;
+}
+
+div#buscar {
+	width: 100%;
+	margin-bottom: 2rem;
+	display: flex;
+	align-items: center;
+}
+
+div#buscar div#label-buscar {
+	height: 3rem;
+	padding: 0rem 0.6rem;
+	background-color: #000;
+	display: flex;
+	align-items: center;
+	border: 1px solid #FFF;
+	border-right: 0;
+	border-top-left-radius: 0.2rem;
+	border-bottom-left-radius: 0.2rem;
+}
+
+div#buscar div#input-buscar {
+	height: 3rem;
+	padding: 0rem 0.6rem;
+	background-color: #000;
+	border: 1px solid #FFF;
+	display: flex;
+	align-items: center;
+	border-top-right-radius: 0.2rem;
+	border-bottom-right-radius: 0.2rem;
+}
+
+div#buscar div#input-buscar input {
+	text-align: center;
+	border: 0;
+	background-color: #000;
+	color: #FFF;
+	font-weight: bold;
+}
+
+::placeholder {
+  color: #FFF;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: #FFF;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: #FFF;
+}
+
+@media (min-width: 576px) {
+	.banner h2 {
+		font-size: 4rem;
+	}
+
+	section.productos {
+		width: 69%;
+	}
+
+	article.producto {
+		width: 100%;
+		margin-bottom: 0.2rem;
+	}
+
+	aside {
+		display: block;
+		width: 30%;
+	}
+}
+
+@media (min-width: 768px) {
+	.banner h2 {
+		font-size: 5rem;
+	}
+
+	article.producto {
+		width: 49%;
+		margin-bottom: 0.2rem;
+	}
+}
+
+@media (min-width: 992px) {
+	section.productos {
+		width: 79%;
+	}
+
+	article.producto {
+		width: 33%;
+		margin-bottom: 0.2rem;
+	}
+
+	aside {
+		display: block;
+		width: 19%;
+	}
+
+	.banner h2 {
+		font-size: 8rem;
+	}
 }

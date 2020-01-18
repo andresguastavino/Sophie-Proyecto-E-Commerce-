@@ -41,7 +41,7 @@
             </div>
           </div>
           <div class="col-3">
-            <form action="/gestor/agregar-producto" method="GET">
+            <form action="/gestor/agregar-producto" method="GET" class="@if(!Auth::user()->admin) disabled @endif">
               <button type="submit" class="btn btn-dark" data-toggle="tooltip" data-placement="bottom" title="Agregar un producto nuevo"><i class="fas fa-plus"></i>Agregar nuevo</button>
             </form>
           </div>
@@ -92,13 +92,13 @@
               {{$producto->categoria->nombre}}
             </div>
             <div class="col-1 text-center">
-              <form action="/gestor/modificar-producto" method="get">
+              <form action="/gestor/modificar-producto" method="get" class="@if(!Auth::user()->admin) disabled @endif">
                 <input type="hidden" name="producto_id" value="{{$producto->id}}">
                 <button type="submit" class="btn btn-dark" data-toggle="tooltip" data-placement="bottom" title="Modificar producto"><i class="fas fa-tools"></i></button>
               </form>
             </div>
             <div class="col-1 text-center">
-              <form action="/gestor/quitar-producto" method="post">
+              <form action="/gestor/quitar-producto" method="post" class="@if(!Auth::user()->admin) disabled @endif">
                 @csrf
                 <input type="hidden" name="producto_id" value="{{$producto->id}}">
                 <button type="submit" class="btn btn-dark" name="button" data-toggle="tooltip" data-placement="bottom" title="Eliminar producto"><i class="fas fa-trash-alt"></i></button>
@@ -125,7 +125,7 @@
             <input type="radio" class="mr-2" name="filtrar_marca" id="nombre_marca" value="nombre"><label for="nombre_marca">Buscar por nombre</label>
           </div>
           <div class="col-3">
-            <form action="/gestor/agregar-marca" method="GET">
+            <form action="/gestor/agregar-marca" method="GET" class="@if(!Auth::user()->admin) disabled @endif">
               <button type="submit" class="btn btn-dark" data-toggle="tooltip" data-placement="bottom" title="Agregar una marca nueva"><i class="fas fa-plus"></i>Agregar nueva</button>
             </form>
           </div>
@@ -161,13 +161,13 @@
               {{count($marca->productos)}}
             </div>
             <div class="col-3 text-center">
-              <form action="/gestor/modificar-marca" method="get">
+              <form action="/gestor/modificar-marca" method="get" class="@if(!Auth::user()->admin) disabled @endif">
                 <input type="hidden" name="marca_id" value="{{$marca->id}}">
                 <button type="submit" class="btn btn-dark" name="button" data-toggle="tooltip" data-placement="bottom" title="Modificar marca"><i class="fas fa-tools"></i></button>
               </form>
             </div>
             <div class="col-3 text-center">
-              <form action="/gestor/quitar-marca" @if(count($marca->productos))onclick="event.preventDefault();"@endif method="post">
+              <form action="/gestor/quitar-marca" class="@if(!Auth::user()->admin) disabled @endif" @if(count($marca->productos))onclick="event.preventDefault();"@endif method="post">
                 @csrf
                 <input type="hidden" name="marca_id" value="{{$marca->id}}">
                 <button type="submit" class="btn btn-dark @if(count($marca->productos)) disabled @endif" name="button"  data-toggle="tooltip" data-placement="bottom" title="Eliminar marca"><i class="fas fa-trash-alt"></i></button>
@@ -194,7 +194,7 @@
             <input type="radio" class="mr-2" name="filtrar_categoria" id="nombre_categoria" value="nombre"><label for="nombre_categoria">Buscar por nombre</label>
           </div>
           <div class="col-3">
-            <form action="/gestor/agregar-categoria" method="GET">
+            <form action="/gestor/agregar-categoria" method="GET" class="@if(!Auth::user()->admin) disabled @endif">
               <button type="submit" class="btn btn-dark" data-toggle="tooltip" data-placement="bottom" title="Agregar una categoria nueva"><i class="fas fa-plus"></i>Agregar nueva</button>
             </form>
           </div>
@@ -230,13 +230,13 @@
               {{count($categoria->productos)}}
             </div>
             <div class="col-3 text-center">
-              <form action="/gestor/modificar-categoria" method="get">
+              <form action="/gestor/modificar-categoria" method="get" class="@if(!Auth::user()->admin) disabled @endif">
                 <input type="hidden" name="categoria_id" value="{{$categoria->id}}">
                 <button type="submit" class="btn btn-dark" name="button" data-toggle="tooltip" data-placement="bottom" title="Modificar categoria"><i class="fas fa-tools"></i></button>
               </form>
             </div>
             <div class="col-3 text-center">
-              <form action="/gestor/quitar-categoria" @if(count($categoria->productos))onclick="event.preventDefault();"@endif method="post">
+              <form action="/gestor/quitar-categoria" class="@if(!Auth::user()->admin) disabled @endif" @if(count($categoria->productos))onclick="event.preventDefault();"@endif method="post">
                 @csrf
                 <input type="hidden" name="categoria_id" value="{{$categoria->id}}">
                 <button type="submit" class="btn btn-dark @if(count($categoria->productos)) disabled @endif" name="button" data-toggle="tooltip" data-placement="bottom" title="Eliminar categoria"><i class="fas fa-trash-alt"></i></button>
@@ -301,13 +301,13 @@
             </div>
             <div class="col-3 text-center">
               @if (!$user->admin)
-                <form action="/gestor/dar-admin" method="post">
+                <form action="/gestor/dar-admin" method="post" class="@if(!Auth::user()->admin) disabled @endif">
                   @csrf
                   <input type="hidden" name="user_id" value="{{$user->id}}">
                   <button type="submit" class="btn btn-dark" name="button">Dar admin</button>
                 </form>
               @else
-                <form action="/gestor/quitar-admin" method="post">
+                <form action="/gestor/quitar-admin" method="post" class="@if(!Auth::user()->admin) disabled @endif">
                   @csrf
                   <input type="hidden" name="user_id" value="{{$user->id}}">
                   <button type="submit" class="btn btn-dark" name="button">Quitar admin</button>
@@ -335,4 +335,5 @@
 <script src="/js/tabs-gestor.js"></script>
 <script src="/js/tooltip.js"></script>
 <script src="/js/filtrar.js"></script>
+<script src="/js/funciones-admin.js"></script>
 @endsection

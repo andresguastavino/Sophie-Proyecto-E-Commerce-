@@ -71,11 +71,8 @@
                 <button type="submit" class="btn btn-dark">
                   {{ __('Login') }}
                 </button>
-                <button type="button" class="btn btn-dark login-link" data-toggle="tooltip" data-placement="bottom" title="Iniciar sesión con Google" onclick="window.location.replace('/google/login');">
+                <button type="button" class="btn btn-dark login-link" id="google" data-toggle="tooltip" data-placement="bottom" title="Iniciar sesión con Google">
                   <i class="fab fa-google"></i>Google
-                </button>
-                <button type="button" class="btn btn-dark login-link" data-toggle="tooltip" data-placement="bottom" title="Iniciar sesión con Facebook" onclick="window.location.replace('/facebook/login');">
-                  <i class="fab fa-facebook-f"></i>Facebook
                 </button>
               </div>
             </div>
@@ -88,5 +85,6 @@
 @endsection
 
 @section('script')
+<script src="/js/login.js"></script>
 <script src="/js/tooltip.js"></script>
 @endsection
