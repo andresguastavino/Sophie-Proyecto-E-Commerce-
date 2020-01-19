@@ -8,6 +8,7 @@
 
 #tabs div {
   text-align: center;
+  margin: 0.4rem 0;
 }
 
 #tabs .ui-state-active {
