@@ -20,8 +20,8 @@ for(var input of inputs) {
 
     for(var elemento of elementos) {
       if(busqueda != '') {
-        var valor = elemento.querySelector(`.${filtro}`).innerHTML.toLowerCase()
-        
+        var valor = elemento.querySelector(`div.${filtro}`).innerHTML.toLowerCase()
+
         if(!valor.includes(busqueda)) {
           elemento.style.display = 'none'
         } else {

@@ -34,10 +34,10 @@
               <input type="radio" class="mr-2" name="filtrar_producto" id="nombre_producto" value="nombre"><label for="nombre_producto">Buscar por nombre</label>
             </div>
             <div class="col-6">
-              <input type="radio" class="mr-2" name="filtrar_producto" id="marca_producto" value="marca"><label for="marca_producto">Buscar por marca</label>
+              <input type="radio" class="mr-2" name="filtrar_producto" id="marca_producto" value="marca_producto"><label for="marca_producto">Buscar por marca</label>
             </div>
             <div class="col-6">
-              <input type="radio" class="mr-2" name="filtrar_producto" id="categoria_producto" value="categoria"><label for="categoria_producto">Buscar por categoria</label>
+              <input type="radio" class="mr-2" name="filtrar_producto" id="categoria_producto" value="categoria_producto"><label for="categoria_producto">Buscar por categoria</label>
             </div>
           </div>
           <div class="col-3">
@@ -77,7 +77,7 @@
               {{$producto->id}}
             </div>
             <div class="col-1 text-center">
-              <img src="/storage/productos/{{$producto->imagen}}" alt="">
+              <i class="fas fa-dot-circle target" onmouseover="show_image('{{$producto->imagen}}', event)" onmouseout="hide_image()" style="color:#000;"></i>
             </div>
             <div class="col-2 text-center nombre">
               {{$producto->nombre}}
@@ -85,10 +85,10 @@
             <div class="col-2 text-center">
               {{$producto->precio}}
             </div>
-            <div class="col-2 text-center marca">
+            <div class="col-2 text-center marca_producto">
               {{$producto->marca->nombre}}
             </div>
-            <div class="col-2 text-center categoria">
+            <div class="col-2 text-center categoria_producto">
               {{$producto->categoria->nombre}}
             </div>
             <div class="col-1 text-center">
@@ -332,6 +332,7 @@
 <script src="/js/jquery-ui/jquery-ui.min.js"></script>
 
 <script src="/js/cookies.js"></script>
+<script src="/js/ampliar-imagen.js"></script>
 <script src="/js/tabs-gestor.js"></script>
 <script src="/js/tooltip.js"></script>
 <script src="/js/filtrar.js"></script>

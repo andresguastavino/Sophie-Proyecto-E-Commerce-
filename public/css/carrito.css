@@ -1,15 +1,10 @@
-#title {
-  text-align: center;
-}
-
 .card {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
-.separation-div {
-  width: 2px;
-  background-color: #ccc;
-  margin-right: 2rem;
+.imagen-producto {
+  border-right: 1px solid #343A40;
 }
 
 .info-producto {
@@ -17,9 +12,14 @@
   flex-wrap: wrap;
 }
 
-.nombre-producto, .precio-producto {
-	width: 50%;
-	text-align: center;
+.nombre-producto, .precio-producto, .marca-producto, .categoria-producto {
+  text-align: justify;
+  font-family: 'Ubuntu', sans-serif;
+  width: 100%
+}
+
+.cursive {
+  font-family: 'Lobster', cursive;
 }
 
 .nombre-producto {
@@ -28,20 +28,22 @@
 
 .descripcion-producto {
   text-align: justify;
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
-.categoria-producto, .marca-producto, .descripcion-producto, .botones {
+.descripcion-producto, .botones {
   width: 100%;
 }
 
 .botones {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.productos {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+.div-separacion {
+	height: 1px;
+	background-color: #343A40;
+  width: 100%;
+  margin: 0.4rem;
 }

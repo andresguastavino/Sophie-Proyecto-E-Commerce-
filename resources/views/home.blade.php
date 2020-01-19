@@ -86,7 +86,7 @@
 @section('script')
 <script src="js/jquery-ui/jquery-ui.min.js"></script>
 
-<!--	<script src="/js/selected.js"></script> -->
+<script src="/js/selected.js"></script>
 <script src="/js/scrollTop.js"></script>
 <script src="/js/search-bar.js"></script>
 <script src="/js/tooltip.js"></script>
