@@ -1,4 +1,4 @@
-<p align="center"><a href="http://sophie.dhalumnos.com">Sophie</a></p>
+<h1 align="center"><a href="http://sophie.dhalumnos.com">Sophie</a></h1>
 <p align="center"><a href="http://sophie.dhalumnos.com">Sophie</a> es una WebApp de tipo E-Commerce cuyos productos son prendas de vestir de mujer</p>
 
 <hr>
