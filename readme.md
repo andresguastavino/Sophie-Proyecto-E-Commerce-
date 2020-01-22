@@ -1,3 +1,16 @@
+<p align="center"><a href="http://sophie.dhalumnos.com">Sophie</a></p>
+<p align="center"><a href="http://sophie.dhalumnos.com">Sophie</a> es una WebApp de tipo E-Commerce cuyos productos son prendas de vestir de mujer</p>
+
+<hr>
+
+<p align="left"><strong>Desarrollado utilizando Laravel.</strong></p>
+<p align="left"><strong>Tecnologías de Frontend:</strong> HTML, CSS, JavaScript, jQuery.</p>
+<p align="left"><strong>Tecnologías de Backend:</strong> PHP, MySQL, Eloquent.</p>
+<p align="left"><strong>Otros:</strong> conexión a API de MercadoPago para comprar productos (modo SandBox) y conexión a API de Google para loguearse.</p>
+<p align="left"><strong>Además:</strong> A/B/M de productos, categorías y marcas que componen el catálogo de productos para usuarios con permisos de admin</p>
+
+<hr>
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
