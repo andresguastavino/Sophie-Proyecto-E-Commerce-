@@ -1,5 +1,5 @@
-<h1 align="center"><a href="http://sophie.dhalumnos.com">Sophie</a></h1>
-<p align="center"><a href="http://sophie.dhalumnos.com">Sophie</a> es una WebApp de tipo E-Commerce.</p>
+<h1 align="center"><a href="http://sophie.dhalumnos.com" target="_blank">Sophie</a></h1>
+<p align="center"><a href="http://sophie.dhalumnos.com" target="_blank">Sophie</a> es una WebApp de tipo E-Commerce.</p>
 
 <hr>
 
@@ -11,7 +11,7 @@
 
 <hr>
 
-<a href="http://sophie.dhalumnos.com">Ir a Sophie</a>
+<a href="http://sophie.dhalumnos.com" target="_blank">Ir a Sophie</a>
 
 <hr>
 
